@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone Homepage</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="jumbotron text-center <%= @api_color %> p-5 rounded">
+            <h1 class="display-4"><%= @current_ozone_aqi || 'Error' %></h1>
+            <p class="lead">The current ozone air quality reading for <%= if @current_ozone_reportingarea.present? && @current_ozone_statecode.present?
+                "#{@current_ozone_reportingarea}, #{@current_ozone_statecode}"
+              else
+                "No data available"
+              end %>.
+              <br />Status:
+              <br />
+              <%= @current_ozone_status.upcase %></p>
+            <p>Search for a different ZIP code to get a different reading.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2025 Blair Pattison
+        </div>
+    </footer>
+</body>
+</html>

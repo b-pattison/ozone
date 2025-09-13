@@ -1,0 +1,26 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+//These are the official AirNow hex colors for the air quality index, because I am a nerd :)
+.green{
+    background-color: #00e400;
+}
+.yellow{
+    background-color: #ffff00;
+}
+.orange{
+    background-color: #ff7e00;
+}
+.red{
+    background-color: #ff0000;
+}
+.purple{
+    background-color: #8f3f97;
+}
+.maroon{
+    background-color: #7e0023;
+}
+//For errors, we will use a gray background
+.gray{
+    background-color: #6e6e6e;
+}
