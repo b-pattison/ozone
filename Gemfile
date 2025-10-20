@@ -18,7 +18,7 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem 'bootstrap', '~> 5.3', '>= 5.3.5'
 gem 'jquery-rails'
-gem 'json', '~> 2.13', '>= 2.13.2'
+gem 'json', '~> 2.15'
 
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
